@@ -1,0 +1,15 @@
+[
+  {
+    "type": "б",
+    "name": "Шалаш",
+    "background": "hovel",
+    "requirements": {
+      "hammer": 2,
+      "wood": 2,
+      "skin": 2
+    },
+    "success": {
+      "hovel": 1
+    }
+  }
+]

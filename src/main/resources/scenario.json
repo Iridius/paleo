@@ -1,0 +1,1050 @@
+[
+  {
+    "type": "а",
+    "name": "Змея",
+    "background": "danger",
+    "actions": [
+      {
+        "requirements": {
+          "attention": 3,
+          "drop": 2
+        },
+        "success": {
+          "instant_kill": true,
+          "dream_card": 1
+        },
+        "fail": {
+          "damage": 2
+        }
+      }
+    ]
+  },
+  {
+    "type": "а",
+    "name": "Змея",
+    "background": "danger",
+    "actions": [
+      {
+        "requirements": {
+          "attention": 3,
+          "drop": 2
+        },
+        "success": {
+          "instant_kill": true,
+          "dream_card": 1
+        },
+        "fail": {
+          "damage": 2
+        }
+      }
+    ]
+  },
+  {
+    "type": "а",
+    "name": "Голод",
+    "background": "danger",
+    "actions": [
+      {
+        "requirements": {
+          "food": 1
+        },
+        "fail": {
+          "damage": 1
+        }
+      }
+    ]
+  },
+  {
+    "type": "а",
+    "name": "Мамонтёнок",
+    "background": "mammoth",
+    "actions": [
+      {
+        "requirements": {
+          "spear": 4,
+          "drop": 2
+        },
+        "success": {
+          "food": 3,
+          "skin": 1,
+          "story_card": 2,
+          "instant_kill": true
+        }
+      }
+    ],
+    "assist": true
+  },
+  {
+    "type": "а",
+    "name": "Мамонт-гигант",
+    "background": "mammoth",
+    "actions": [
+      {
+        "requirements": {
+          "spear": 8,
+          "drop": 3
+        },
+        "success": {
+          "food": 5,
+          "mammoth_card": 1,
+          "skin": 2,
+          "instant_kill": true
+        }
+      }
+    ],
+    "assist": true
+  },
+  {
+    "type": "а",
+    "name": "Раненый мамонт",
+    "background": "mammoth",
+    "actions": [
+      {
+        "requirements": {
+          "spear": 6,
+          "drop": 2
+        },
+        "success": {
+          "food": 5,
+          "mammoth_card": 1,
+          "skin": 2,
+          "instant_kill": true
+        },
+        "fail": {
+          "damage": 1
+        }
+      }
+    ]
+  },
+  {
+    "type": "а",
+    "name": "Охотники-чужаки",
+    "background": "dream",
+    "actions": [
+      {
+        "requirements": {
+          "food": 1
+        },
+        "success": {
+          "story_card": 1,
+          "instant_kill": true
+        }
+      }
+    ],
+    "assist": true
+  },
+  {
+    "type": "а",
+    "name": "Старый мамонт",
+    "background": "mammoth",
+    "actions": [
+      {
+        "requirements": {
+          "spear": 5,
+          "drop": 2
+        },
+        "success": {
+          "food": 4,
+          "skin": 1,
+          "mammoth_card": 1,
+          "instant_kill": true
+        }
+      }
+    ],
+    "assist": true
+  },
+  {
+    "type": "б",
+    "name": "Заваленная пещера",
+    "background": "hovel",
+    "actions": [
+      {
+        "requirements": {
+          "hammer": 3,
+          "drop": 3
+        },
+        "success": {
+          "instant_kill": true,
+          "mammoth_card": 1,
+          "hovel": 1
+        }
+      }
+    ],
+    "assist": true
+  },
+  {
+    "type": "б",
+    "name": "Медвежья берлога",
+    "background": "hovel",
+    "actions": [
+      {
+        "requirements": {
+          "spear": 4,
+          "torch": 1,
+          "drop": 2
+        },
+        "success": {
+          "instant_kill": true,
+          "food": 2,
+          "mammoth_card": 1,
+          "skin": 1,
+          "hovel": 1
+        }
+      }
+    ],
+    "assist": true
+  },
+  {
+    "type": "б",
+    "name": "Колючий куст",
+    "background": "forrest",
+    "actions": [
+      {
+        "requirements": {
+          "hammer": 2,
+          "drop": 2
+        },
+        "success": {
+          "instant_kill": true,
+          "wood": 1
+        },
+        "fail": {
+          "damage": 1
+        }
+      }
+    ]
+  },
+  {
+    "type": "б",
+    "name": "Холод",
+    "background": "danger",
+    "actions": [
+      {
+        "requirements": {
+          "torch": 1
+        },
+        "success": {
+          "damage": -1
+        },
+        "fail": {
+          "damage": 1
+        }
+      }
+    ]
+  },
+  {
+    "type": "б",
+    "name": "Голодный отшельник",
+    "background": "steps",
+    "actions": [
+      {
+        "requirements": {
+          "food": 1
+        },
+        "success": {
+          "instant_kill": 1,
+          "investigation_card": 1
+        }
+      },
+      {
+        "requirements": {
+          "food": 1
+        },
+        "success": {
+          "instant_kill": 1,
+          "damage": -2
+        }
+      }
+    ],
+    "assist": true
+  },
+  {
+    "type": "б",
+    "name": "Камннепад",
+    "background": "mountain",
+    "actions": [
+      {
+        "requirements": {
+          "attention": 2,
+          "drop": 1
+        },
+        "success": {
+          "stone": 2
+        },
+        "fail": {
+          "damage": 1
+        }
+      }
+    ]
+  },
+  {
+    "type": "б",
+    "name": "Беспомощный кабан",
+    "background": "river",
+    "actions": [
+      {
+        "requirements": {
+          "hammer": 1,
+          "attention": 1,
+          "drop": 2
+        },
+        "success": {
+          "instant_kill": true,
+          "food": 2,
+          "skin": 1
+        }
+      }
+    ],
+    "assist": true
+  },
+  {
+    "type": "б",
+    "name": "Тайная пещера",
+    "background": "hovel",
+    "actions": [
+      {
+        "requirements": {
+          "attention": 3,
+          "drop": 1
+        },
+        "success": {
+          "instant_kill": true,
+          "mammoth_card": 1,
+          "hovel": 1
+        }
+      }
+    ],
+    "access": true
+  },
+  {
+    "type": "б",
+    "name": "Истощённый волк",
+    "background": "danger",
+    "actions": [
+      {
+        "requirements": {
+          "spear": 2,
+          "torch": 1,
+          "drop": 2
+        },
+        "success": {
+          "instant_kill": true,
+          "skin": 1
+        },
+        "fail": {
+          "damage": 1
+        }
+      }
+    ]
+  },
+  {
+    "type": "1",
+    "name": "Туша бизона",
+    "background": "river",
+    "actions": [
+      {
+        "requirements": {
+          "drop": 2
+        },
+        "success": {
+          "instant_kill": true,
+          "food": 1,
+          "skin": 1
+        }
+      }
+    ],
+    "assist": true
+  },
+  {
+    "type": "1",
+    "name": "Ягодный куст",
+    "background": "forrest",
+    "actions": [
+      {
+        "requirements": {
+          "drop": 3
+        },
+        "success": {
+          "instant_kill": true,
+          "food": 2,
+          "wood": 1
+        }
+      },
+      {
+        "requirements": {
+          "drop": 1
+        },
+        "success": {
+          "food": 1
+        }
+      }
+    ],
+    "assist": true
+  },
+  {
+    "type": "1",
+    "name": "Упавшее дерево",
+    "background": "forrest",
+    "actions": [
+      {
+        "requirements": {
+          "hammer": 1,
+          "drop": 2
+        },
+        "success": {
+          "instant_kill": true
+        }
+      }
+    ]
+  },
+  {
+    "type": "1",
+    "name": "Одинокий мамонт",
+    "background": "river",
+    "actions": [
+      {
+        "requirements": {
+          "spear": 4,
+          "attention": 2,
+          "drop": 2
+        },
+        "success": {
+          "instant_kill": true,
+          "food": 4,
+          "skin": 1
+        }
+      }
+    ],
+    "assist": true
+  },
+  {
+    "type": "1",
+    "name": "Дикий кабан",
+    "background": "river",
+    "actions":[
+      {
+        "requirements": {
+          "spear": 3,
+          "drop": 2
+        },
+        "success": {
+          "instant_kill": true,
+          "food": 3,
+          "skin": 1
+        }
+      }
+    ],
+    "assist": true
+  },
+  {
+    "type": "1",
+    "name": "Бизон",
+    "background": "river",
+    "actions": [
+      {
+        "requirements": {
+          "spear": 4,
+          "drop": 3
+        },
+        "success": {
+          "instant_kill": true,
+          "food": 4,
+          "skin": 1
+        }
+      }
+    ],
+    "assist": true
+  },
+  {
+    "type": "1",
+    "name": "Целебный корень",
+    "background": "forrest",
+    "actions": [
+      {
+        "requirements": {
+          "hammer": 1,
+          "attention": 1,
+          "drop": 2
+        },
+        "success": {
+          "root": 1
+        }
+      }
+    ],
+    "assist": true
+  },
+  {
+    "type": "1",
+    "name": "Родная пещера",
+    "background": "bonfire",
+    "actions": [
+      {
+        "requirements": {
+          "attention": 1
+        },
+        "success": {
+          "dream_card": 1
+        }
+      },
+      {
+        "work": 2
+      }
+    ],
+    "assist": true
+  },
+  {
+    "type": "1",
+    "name": "Додо",
+    "background": "forrest",
+    "actions": [
+      {
+        "requirements": {
+          "spear": 1,
+          "drop": 2
+        },
+        "success": {
+          "instant_kill": true,
+          "food": 2
+        }
+      }
+    ],
+    "assist": true
+  },
+  {
+    "type": "1",
+    "name": "Каменистая осыпь",
+    "background": "mountain",
+    "actions": [
+      {
+        "requirements": {
+          "hammer": 2,
+          "drop": 2
+        },
+        "success": {
+          "stone": 2
+        }
+      },
+      {
+        "requirements": {
+          "drop": 2
+        },
+        "success": {
+          "stone": 1
+        }
+      }
+    ],
+    "assist": true
+  },
+  {
+    "type": "1",
+    "name": "Подлесок",
+    "background": "forrest",
+    "actions": [
+      {
+        "requirements": {
+          "drop": 1
+        },
+        "success": {
+          "food": 1
+        }
+      },
+      {
+        "requirements": {
+          "drop": 2
+        },
+        "success": {
+          "wood": 1
+        }
+      }
+    ],
+    "assist": true
+  },
+  {
+    "type": "1",
+    "name": "Замешательство",
+    "background": "danger",
+    "actions": [
+      {
+        "requirements": {
+          "attention": 1,
+          "drop": 2
+        },
+        "success": {
+          "dream_card": 1
+        },
+        "fail": {
+          "damage": 1
+        }
+      }
+    ]
+  },
+  {
+    "type": "1",
+    "name": "Косуля",
+    "background": "river",
+    "actions": [
+      {
+        "requirements": {
+          "spear": 2,
+          "attention": 1,
+          "drop": 2
+        },
+        "success": {
+          "instant_kill": true,
+          "food": 2,
+          "skin": 1
+        }
+      }
+    ],
+    "assist": true
+  },
+  {
+    "type": "1",
+    "name": "Деревья",
+    "background": "forrest",
+    "actions": [
+      {
+        "requirements": {
+          "hammer": 2,
+          "drop": 2
+        },
+        "success": {
+          "wood": 3
+        }
+      },
+      {
+        "requirements": {
+          "drop": 2
+        },
+        "success": {
+          "wood": 1
+        }
+      }
+    ],
+    "assist": true
+  },
+  {
+    "type": "1",
+    "name": "Мелкие камни",
+    "background": "river",
+    "actions": [
+      {
+        "requirements": {
+          "attention": 1,
+          "drop": 1
+        },
+        "success": {
+          "stone": 1
+        }
+      }
+    ],
+    "assist": true
+  },
+  {
+    "type": "1",
+    "name": "Деревья",
+    "background": "forrest",
+    "actions": [
+      {
+        "requirements": {
+          "hammer": 2,
+          "drop": 2
+        },
+        "success": {
+          "wood": 3
+        }
+      },
+      {
+        "requirements": {
+          "drop": 2
+        },
+        "success": {
+          "wood": 1
+        }
+      }
+    ],
+    "assist": true
+  },
+  {
+    "type": "1",
+    "name": "Фрукты",
+    "background": "forrest",
+    "actions": [
+      {
+        "requirements": {
+          "attention": 2,
+          "drop": 2
+        },
+        "success": {
+          "food": 3
+        }
+      },
+      {
+        "requirements": {
+          "drop": 2
+        },
+        "success": {
+          "food": 1
+        }
+      }
+    ],
+    "assist": true
+  },
+  {
+    "type": "1",
+    "name": "Родная пещера",
+    "background": "bonfire",
+    "actions": [
+      {
+        "work": 1
+      },
+      {
+        "requirements": {
+          "people": "2-"
+        },
+        "success": {
+          "people_card": 1
+        }
+      },
+      {
+        "requirements": {
+          "people": "3+",
+          "wood": 1
+        },
+        "success": {
+          "people_card": 1
+        }
+      }
+    ],
+    "assist": true
+  },
+  {
+    "type": "1",
+    "name": "Дикий кабан",
+    "background": "river",
+    "actions":[
+      {
+        "requirements": {
+          "spear": 3,
+          "drop": 2
+        },
+        "success": {
+          "instant_kill": true,
+          "food": 3,
+          "skin": 1
+        }
+      }
+    ],
+    "assist": true
+  },
+  {
+    "type": "1",
+    "name": "Подлесок",
+    "background": "forrest",
+    "actions": [
+      {
+        "requirements": {
+          "drop": 1
+        },
+        "success": {
+          "food": 1
+        }
+      },
+      {
+        "requirements": {
+          "drop": 2
+        },
+        "success": {
+          "wood": 1
+        }
+      }
+    ],
+    "assist": true
+  },
+  {
+    "type": "1",
+    "name": "Родная пещера",
+    "background": "bonfire",
+    "actions": [
+      {
+        "work": 1
+      },
+      {
+        "requirements": {
+          "people": "2-"
+        },
+        "success": {
+          "people_card": 1
+        }
+      },
+      {
+        "requirements": {
+          "people": "3+",
+          "wood": 1
+        },
+        "success": {
+          "people_card": 1
+        }
+      }
+    ],
+    "assist": true
+  },
+  {
+    "type": "1",
+    "name": "Родная пещера",
+    "background": "bonfire",
+    "actions": [
+      {
+        "work": 1
+      },
+      {
+        "requirements": {
+          "hammer": 1
+        },
+        "success": {
+          "investigation_card": 1
+        }
+      }
+    ],
+    "assist": true
+  },
+  {
+    "type": "1",
+    "name": "Родная пещера",
+    "background": "bonfire",
+    "actions": [
+      {
+        "work": 1
+      },
+      {
+        "requirements": {
+          "people": "2-"
+        },
+        "success": {
+          "people_card": 1
+        }
+      },
+      {
+        "requirements": {
+          "people": "3+",
+          "wood": 1
+        },
+        "success": {
+          "people_card": 1
+        }
+      }
+    ],
+    "assist": true
+  },
+  {
+    "type": "1",
+    "name": "Родная пещера",
+    "background": "bonfire",
+    "actions": [
+      {
+        "work": 1
+      },
+      {
+        "requirements": {
+          "people": "2-"
+        },
+        "success": {
+          "people_card": 1
+        }
+      },
+      {
+        "requirements": {
+          "people": "3+",
+          "wood": 1
+        },
+        "success": {
+          "people_card": 1
+        }
+      }
+    ],
+    "assist": true
+  },
+  {
+    "type": "1",
+    "name": "Заброшенная пещера",
+    "background": "mountain",
+    "actions": [
+      {
+        "requirements": {
+          "torch": 1
+        },
+        "success": {
+          "instant_kill": true,
+          "investigation_card": 1
+        },
+        "fail": {
+          "damage": 1
+        }
+      }
+    ]
+  },
+  {
+    "type": "1",
+    "name": "Каменистая осыпь",
+    "background": "mountain",
+    "actions": [
+      {
+        "requirements": {
+          "hammer": 2,
+          "drop": 2
+        },
+        "success": {
+          "stone": 2
+        }
+      },
+      {
+        "requirements": {
+          "drop": 2
+        },
+        "success": {
+          "stone": 1
+        }
+      }
+    ],
+    "assist": true
+  },
+  {
+    "type": "1",
+    "name": "Горный козёл",
+    "background": "mountain",
+    "actions": [
+      {
+        "requirements": {
+          "spear": 3,
+          "drop": 2
+        },
+        "success": {
+          "instant_kill": 1,
+          "food": 2,
+          "skin": 1
+        }
+      }
+    ],
+    "assist": true
+  },
+  {
+    "type": "1",
+    "name": "Одинокий волк",
+    "background": "danger",
+    "actions": [
+      {
+        "requirements": {
+          "attention": 1,
+          "food": 1,
+          "drop": 2
+        },
+        "success": {
+          "wolf_card": 1,
+          "instant_kill": 1
+        },
+        "fail": {
+          "damage": 2
+        }
+      },
+      {
+        "requirements": {
+          "torch": 1
+        },
+        "fail": {
+          "damage": 2
+        }
+      }
+    ]
+  },
+  {
+    "type": "1",
+    "name": "Родная пещера",
+    "background": "bonfire",
+    "actions": [
+      {
+        "work": 1
+      },
+      {
+        "requirements": {
+          "attention": 1
+        },
+        "success": {
+          "dream_card": 1
+        }
+      }
+    ],
+    "assist": true
+  },
+  {
+    "type": "1",
+    "name": "Покинутая стоянка",
+    "background": "mountain",
+    "actions": [
+      {
+        "requirements": {
+          "drop": 2
+        },
+        "success": {
+          "stone": 1
+        }
+      },
+      {
+        "requirements": {
+          "drop": 2
+        },
+        "success": {
+          "skin": 1
+        }
+      }
+    ],
+    "assist": true
+  },
+  {
+    "type": "1",
+    "name": "Родная пещера",
+    "background": "bonfire",
+    "actions": [
+      {
+        "work": 2
+      },
+      {
+        "requirements": {
+          "hammer": 1
+        },
+        "success": {
+          "investigation_card": 1
+        }
+      }
+    ],
+    "assist": true
+  },
+  {
+    "type": "1",
+    "name": "Одинокий волк",
+    "background": "danger",
+    "actions": [
+      {
+        "requirements": {
+          "attention": 1,
+          "food": 1,
+          "drop": 2
+        },
+        "success": {
+          "wolf_card": 1,
+          "instant_kill": 1
+        },
+        "fail": {
+          "damage": 2
+        }
+      },
+      {
+        "requirements": {
+          "torch": 1
+        },
+        "fail": {
+          "damage": 2
+        }
+      }
+    ]
+  }
+]
