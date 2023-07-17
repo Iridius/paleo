@@ -1,0 +1,286 @@
+[
+  {
+    "name": "Ягодный куст",
+    "actions": [
+      {
+        "requirements": {
+          "drop": 3
+        },
+        "success": {
+          "remove": true,
+          "wood": 1,
+          "food": 3
+        }
+      },
+      {
+        "requirements": {
+          "drop": 1
+        },
+        "success": {
+          "food": 1
+        }
+      }
+    ],
+    "assist": true
+  },
+  {
+    "name": "Обмен",
+    "actions": [
+      {
+        "requirements": {
+          "attention": 3,
+          "food": 2
+        },
+        "success": {
+          "axe": 1,
+          "remove": true
+        }
+      },
+      {
+        "requirements": {
+          "attention": 3,
+          "food": 2
+        },
+        "success": {
+          "talisman": 1,
+          "remove": true
+        }
+      }
+    ],
+    "assist": true
+  },
+  {
+    "name": "Целебный корень",
+    "actions": [
+      {
+        "requirements": {
+          "hammer": 1,
+          "attention": 1
+        },
+        "success": {
+          "drop": 2,
+          "root": 1
+        }
+      }
+    ],
+    "assist": true
+  },
+  {
+    "name": "Бизон",
+    "actions": [
+      {
+        "requirements": {
+          "spear": 4,
+          "drop": 3
+        },
+        "success": {
+          "remove": true,
+          "food": 4,
+          "skin": 1
+        }
+      }
+    ],
+    "assist": true
+  },
+  {
+    "name": "Осторожность",
+    "actions": [
+      {
+        "requirements": {
+          "spear": 1
+        },
+        "success": {
+          "remove_card": 1
+        }
+      }
+    ],
+    "assist": true
+  },
+  {
+    "name": "Путешественник",
+    "actions": [
+      {
+        "requirements": {
+          "attention": 1
+        },
+        "success": {
+          "drop": 1,
+          "people_card": 1
+        }
+      }
+    ],
+    "assist": true
+  },
+  {
+    "name": "Прозорливость",
+    "actions": [
+      {
+        "requirements": {
+          "attention": 1
+        },
+        "success": {
+          "search_card": 3
+        }
+      }
+    ],
+    "assist": true
+  },
+  {
+    "name": "Осторожность",
+    "actions": [
+      {
+        "requirements": {
+          "spear": 1
+        },
+        "success": {
+          "remove_card": 1
+        }
+      }
+    ],
+    "assist": true
+  },
+  {
+    "name": "Капище",
+    "actions": [
+      {
+        "requirements": {
+          "attention": 3
+        },
+        "success": {
+          "talisman": 1
+        }
+      },
+      {
+        "requirements": {
+          "drop": 3
+        },
+        "success": {
+          "talisman": 1
+        }
+      }
+    ],
+    "assist": true
+  },
+  {
+    "name": "Прозорливость",
+    "actions": [
+      {
+        "requirements": {
+          "attention": 1
+        },
+        "success": {
+          "search_card": 3
+        }
+      }
+    ],
+    "assist": true
+  },
+  {
+    "name": "Меняльщик",
+    "actions": [
+      {
+        "requirements": {
+          "wood": 1
+        },
+        "success": {
+          "resources": 2
+        }
+      },
+      {
+        "requirements": {
+          "stone": 1
+        },
+        "success": {
+          "resources": 2
+        }
+      },
+      {
+        "requirements": {
+          "food": 1
+        },
+        "success": {
+          "resources": 2
+        }
+      }
+    ],
+    "assist": true
+  },
+  {
+    "name": "Храбрость",
+    "actions": [
+      {
+        "requirements": {
+          "hammer": 1
+        },
+        "success": {
+          "return_card": 3
+        }
+      }
+    ],
+    "assist": true
+  },
+  {
+    "name": "Древнее знание",
+    "actions": [
+      {
+        "requirements": {
+          "attention": 2,
+          "drop": 2
+        },
+        "success": {
+          "remove": true,
+          "investigation_card": 2
+        }
+      }
+    ],
+    "assist": true
+  },
+  {
+    "name": "Дикий кабан",
+    "actions": [
+      {
+        "requirements": {
+          "spear": 3,
+          "drop": 2
+        },
+        "success": {
+          "remove": true,
+          "food": 3,
+          "skin": 1
+        }
+      }
+    ],
+    "assist": true
+  },
+  {
+    "name": "Олень",
+    "actions": [
+      {
+        "requirements": {
+          "spear": 5,
+          "drop": 3
+        },
+        "success": {
+          "remove": true,
+          "food": 4,
+          "skin": 2
+        }
+      }
+    ],
+    "assist": true
+  },
+  {
+    "name": "Храбрость",
+    "actions": [
+      {
+        "requirements": {
+          "hammer": 1
+        },
+        "success": {
+          "return_card": 3
+        }
+      }
+    ],
+    "assist": true
+  }
+]

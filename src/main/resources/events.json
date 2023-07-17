@@ -10,7 +10,7 @@
           "drop": 2
         },
         "success": {
-          "instant_kill": true,
+          "remove": true,
           "dream_card": 1
         },
         "fail": {
@@ -30,7 +30,7 @@
           "drop": 2
         },
         "success": {
-          "instant_kill": true,
+          "remove": true,
           "dream_card": 1
         },
         "fail": {
@@ -68,7 +68,7 @@
           "food": 3,
           "skin": 1,
           "story_card": 2,
-          "instant_kill": true
+          "remove": true
         }
       }
     ],
@@ -88,7 +88,7 @@
           "food": 5,
           "mammoth_card": 1,
           "skin": 2,
-          "instant_kill": true
+          "remove": true
         }
       }
     ],
@@ -108,7 +108,7 @@
           "food": 5,
           "mammoth_card": 1,
           "skin": 2,
-          "instant_kill": true
+          "remove": true
         },
         "fail": {
           "damage": 1
@@ -127,7 +127,7 @@
         },
         "success": {
           "story_card": 1,
-          "instant_kill": true
+          "remove": true
         }
       }
     ],
@@ -147,7 +147,7 @@
           "food": 4,
           "skin": 1,
           "mammoth_card": 1,
-          "instant_kill": true
+          "remove": true
         }
       }
     ],
@@ -164,7 +164,7 @@
           "drop": 3
         },
         "success": {
-          "instant_kill": true,
+          "remove": true,
           "mammoth_card": 1,
           "hovel": 1
         }
@@ -184,7 +184,7 @@
           "drop": 2
         },
         "success": {
-          "instant_kill": true,
+          "remove": true,
           "food": 2,
           "mammoth_card": 1,
           "skin": 1,
@@ -205,7 +205,7 @@
           "drop": 2
         },
         "success": {
-          "instant_kill": true,
+          "remove": true,
           "wood": 1
         },
         "fail": {
@@ -242,7 +242,7 @@
           "food": 1
         },
         "success": {
-          "instant_kill": 1,
+          "remove": 1,
           "investigation_card": 1
         }
       },
@@ -251,7 +251,7 @@
           "food": 1
         },
         "success": {
-          "instant_kill": 1,
+          "remove": 1,
           "damage": -2
         }
       }
@@ -289,7 +289,7 @@
           "drop": 2
         },
         "success": {
-          "instant_kill": true,
+          "remove": true,
           "food": 2,
           "skin": 1
         }
@@ -308,7 +308,7 @@
           "drop": 1
         },
         "success": {
-          "instant_kill": true,
+          "remove": true,
           "mammoth_card": 1,
           "hovel": 1
         }
@@ -328,7 +328,7 @@
           "drop": 2
         },
         "success": {
-          "instant_kill": true,
+          "remove": true,
           "skin": 1
         },
         "fail": {
@@ -347,7 +347,7 @@
           "drop": 2
         },
         "success": {
-          "instant_kill": true,
+          "remove": true,
           "food": 1,
           "skin": 1
         }
@@ -365,7 +365,7 @@
           "drop": 3
         },
         "success": {
-          "instant_kill": true,
+          "remove": true,
           "food": 2,
           "wood": 1
         }
@@ -392,7 +392,7 @@
           "drop": 2
         },
         "success": {
-          "instant_kill": true
+          "remove": true
         }
       }
     ]
@@ -409,7 +409,7 @@
           "drop": 2
         },
         "success": {
-          "instant_kill": true,
+          "remove": true,
           "food": 4,
           "skin": 1
         }
@@ -428,7 +428,7 @@
           "drop": 2
         },
         "success": {
-          "instant_kill": true,
+          "remove": true,
           "food": 3,
           "skin": 1
         }
@@ -447,7 +447,7 @@
           "drop": 3
         },
         "success": {
-          "instant_kill": true,
+          "remove": true,
           "food": 4,
           "skin": 1
         }
@@ -503,7 +503,7 @@
           "drop": 2
         },
         "success": {
-          "instant_kill": true,
+          "remove": true,
           "food": 2
         }
       }
@@ -590,7 +590,7 @@
           "drop": 2
         },
         "success": {
-          "instant_kill": true,
+          "remove": true,
           "food": 2,
           "skin": 1
         }
@@ -729,7 +729,7 @@
           "drop": 2
         },
         "success": {
-          "instant_kill": true,
+          "remove": true,
           "food": 3,
           "skin": 1
         }
@@ -874,7 +874,7 @@
           "torch": 1
         },
         "success": {
-          "instant_kill": true,
+          "remove": true,
           "investigation_card": 1
         },
         "fail": {
@@ -919,7 +919,7 @@
           "drop": 2
         },
         "success": {
-          "instant_kill": 1,
+          "remove": 1,
           "food": 2,
           "skin": 1
         }
@@ -940,7 +940,7 @@
         },
         "success": {
           "wolf_card": 1,
-          "instant_kill": 1
+          "remove": 1
         },
         "fail": {
           "damage": 2
@@ -1031,7 +1031,7 @@
         },
         "success": {
           "wolf_card": 1,
-          "instant_kill": 1
+          "remove": 1
         },
         "fail": {
           "damage": 2

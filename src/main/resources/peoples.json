@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Умелец",
+    "health": 3,
+    "abilities": {
+      "hammer": 1
+    },
+    "count": 3
+  },
+  {
+    "name": "Изобретательница",
+    "health": 2,
+    "abilities": {
+      "hammer": 1,
+      "cord": 1
+    },
+    "count": 2
+  },
+  {
+    "name": "Разведчик",
+    "health": 3,
+    "abilities": {
+      "attention": 1
+    },
+    "count": 2
+  },
+  {
+    "name": "Собирательница",
+    "health": 2,
+    "abilities": {
+      "torch": 1,
+      "attention": 1
+    },
+    "count": 3
+  },
+  {
+    "name": "Охотник",
+    "health": 2,
+    "abilities": {
+      "skin": 1,
+      "spear": 1
+    },
+    "count": 4
+  },
+  {
+    "name": "Воительница",
+    "health": 3,
+    "abilities": {
+      "spear": 1
+    },
+    "count": 4
+  },
+  {
+    "name": "Хранитель",
+    "health": 5,
+    "count": 2
+  }
+]

@@ -2,7 +2,6 @@
   {
     "type": "б",
     "name": "Шалаш",
-    "background": "hovel",
     "requirements": {
       "hammer": 2,
       "wood": 2,
@@ -10,6 +9,91 @@
     },
     "success": {
       "hovel": 1
+    }
+  },
+  {
+    "name": "Идол",
+    "requirements": {
+      "hammer": 4,
+      "skin": 3
+    },
+    "success": {
+      "remove": true,
+      "mammoth_card": 1
+    }
+  },
+  {
+    "name": "Рисунок на шкуре",
+    "requirements": {
+      "hammer": 3,
+      "food": 1,
+      "wood": 2,
+      "skin": 1
+    },
+    "success": {
+      "remove": true,
+      "mammoth_card": 1
+    }
+  },
+  {
+    "name": "Топорик",
+    "requirements": {
+      "wood": 1,
+      "stone": 1
+    },
+    "success": {
+      "axe": 1
+    }
+  },
+  {
+    "name": "Захоронение",
+    "requirements": {
+      "hammer": 3,
+      "wood": 1,
+      "stone": 2
+    },
+    "success": {
+      "remove": true,
+      "death": -1
+    }
+  },
+  {
+    "name": "Верёвка",
+    "requirements": {
+      "wood": 1
+    },
+    "success": {
+      "cord": 1
+    }
+  },
+  {
+    "name": "Круг из камней",
+    "requirements": {
+      "hammer": 3,
+      "stone": 4
+    },
+    "success": {
+      "mammoth_card": 1,
+      "remove": true
+    }
+  },
+  {
+    "name": "Одежда",
+    "requirements": {
+      "skin": 1
+    },
+    "success": {
+      "coat": 1
+    }
+  },
+  {
+    "name": "Ловушка",
+    "requirements": {
+      "food": 1,
+      "wood": 1
+    },
+    "success": {
+      "trap": 1
     }
   }
 ]
