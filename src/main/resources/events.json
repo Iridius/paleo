@@ -1,6 +1,21 @@
 [
   {
     "type": "а",
+    "name": "Крупная добыча",
+    "actions": [
+      {
+        "requirements": {
+          "food": 3,
+          "skin": 1
+        },
+        "fail": {
+          "death": 1
+        }
+      }
+    ]
+  },
+  {
+    "type": "а",
     "name": "Змея",
     "background": "danger",
     "actions": [
@@ -152,6 +167,20 @@
       }
     ],
     "assist": true
+  },
+  {
+    "type": "б",
+    "name": "Новый мир",
+    "actions": [
+      {
+        "requirements": {
+          "hovel": 1
+        },
+        "fail": {
+          "death": 1
+        }
+      }
+    ]
   },
   {
     "type": "б",

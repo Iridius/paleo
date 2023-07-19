@@ -1,23 +1,2 @@
 [
-  {
-    "type": "а",
-    "name": "Крупная добыча",
-    "requirements": {
-      "food": 3,
-      "skin": 1
-    },
-    "fail": {
-      "death": 1
-    }
-  },
-  {
-    "type": "б",
-    "name": "Новый мир",
-    "requirements": {
-      "hovel": 1
-    },
-    "fail": {
-      "death": 1
-    }
-  }
 ]
