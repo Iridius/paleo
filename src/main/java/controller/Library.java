@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Random;
 
 public class Library {
-    public static <T> List<T> getMixedCollection(final Collection<T> items) {
+    public <T> List<T> getMixedCollection(final Collection<T> items) {
         List<T> result = new ArrayList<>(items);
         final int totalCount = result.size();
 
@@ -26,7 +26,7 @@ public class Library {
         return result;
     }
 
-    public static <T> T getRandom(final Collection<T> items) {
+    public <T> T getRandom(final Collection<T> items) {
         List<T> list = getMixedCollection(items);
 
         return list.get(0);

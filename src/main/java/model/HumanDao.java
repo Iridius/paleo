@@ -30,8 +30,8 @@ public class HumanDao {
         return health;
     }
 
-    public int getAbilities(String name) {
-        return abilities.getOrDefault(name, 0);
+    public Map<String, Integer> getAbilities() {
+        return abilities;
     }
 
     public int getCount() {

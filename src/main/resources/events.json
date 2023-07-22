@@ -25,7 +25,7 @@
           "drop": 2
         },
         "success": {
-          "remove": true,
+          "remove": 1,
           "dream_card": 1
         },
         "fail": {
@@ -45,7 +45,7 @@
           "drop": 2
         },
         "success": {
-          "remove": true,
+          "remove": 1,
           "dream_card": 1
         },
         "fail": {
@@ -83,7 +83,7 @@
           "food": 3,
           "skin": 1,
           "story_card": 2,
-          "remove": true
+          "remove": 1
         }
       }
     ],
@@ -103,7 +103,7 @@
           "food": 5,
           "mammoth_card": 1,
           "skin": 2,
-          "remove": true
+          "remove": 1
         }
       }
     ],
@@ -123,7 +123,7 @@
           "food": 5,
           "mammoth_card": 1,
           "skin": 2,
-          "remove": true
+          "remove": 1
         },
         "fail": {
           "damage": 1
@@ -142,7 +142,7 @@
         },
         "success": {
           "story_card": 1,
-          "remove": true
+          "remove": 1
         }
       }
     ],
@@ -162,7 +162,7 @@
           "food": 4,
           "skin": 1,
           "mammoth_card": 1,
-          "remove": true
+          "remove": 1
         }
       }
     ],
@@ -193,7 +193,7 @@
           "drop": 3
         },
         "success": {
-          "remove": true,
+          "remove": 1,
           "mammoth_card": 1,
           "hovel": 1
         }
@@ -213,7 +213,7 @@
           "drop": 2
         },
         "success": {
-          "remove": true,
+          "remove": 1,
           "food": 2,
           "mammoth_card": 1,
           "skin": 1,
@@ -234,7 +234,7 @@
           "drop": 2
         },
         "success": {
-          "remove": true,
+          "remove": 1,
           "wood": 1
         },
         "fail": {
@@ -318,7 +318,7 @@
           "drop": 2
         },
         "success": {
-          "remove": true,
+          "remove": 1,
           "food": 2,
           "skin": 1
         }
@@ -337,13 +337,13 @@
           "drop": 1
         },
         "success": {
-          "remove": true,
+          "remove": 1,
           "mammoth_card": 1,
           "hovel": 1
         }
       }
     ],
-    "access": true
+    "assist": true
   },
   {
     "type": "б",
@@ -357,7 +357,7 @@
           "drop": 2
         },
         "success": {
-          "remove": true,
+          "remove": 1,
           "skin": 1
         },
         "fail": {
@@ -376,7 +376,7 @@
           "drop": 2
         },
         "success": {
-          "remove": true,
+          "remove": 1,
           "food": 1,
           "skin": 1
         }
@@ -394,7 +394,7 @@
           "drop": 3
         },
         "success": {
-          "remove": true,
+          "remove": 1,
           "food": 2,
           "wood": 1
         }
@@ -421,7 +421,7 @@
           "drop": 2
         },
         "success": {
-          "remove": true
+          "remove": 1
         }
       }
     ]
@@ -438,7 +438,7 @@
           "drop": 2
         },
         "success": {
-          "remove": true,
+          "remove": 1,
           "food": 4,
           "skin": 1
         }
@@ -457,7 +457,7 @@
           "drop": 2
         },
         "success": {
-          "remove": true,
+          "remove": 1,
           "food": 3,
           "skin": 1
         }
@@ -476,7 +476,7 @@
           "drop": 3
         },
         "success": {
-          "remove": true,
+          "remove": 1,
           "food": 4,
           "skin": 1
         }
@@ -516,7 +516,9 @@
         }
       },
       {
-        "work": 2
+        "success": {
+          "work": 2
+        }
       }
     ],
     "assist": true
@@ -532,7 +534,7 @@
           "drop": 2
         },
         "success": {
-          "remove": true,
+          "remove": 1,
           "food": 2
         }
       }
@@ -619,7 +621,7 @@
           "drop": 2
         },
         "success": {
-          "remove": true,
+          "remove": 1,
           "food": 2,
           "skin": 1
         }
@@ -725,11 +727,13 @@
     "background": "bonfire",
     "actions": [
       {
-        "work": 1
+        "success": {
+          "work": 1
+        }
       },
       {
         "requirements": {
-          "people": "2-"
+          "people": 2
         },
         "success": {
           "people_card": 1
@@ -737,7 +741,7 @@
       },
       {
         "requirements": {
-          "people": "3+",
+          "people": 3,
           "wood": 1
         },
         "success": {
@@ -758,7 +762,7 @@
           "drop": 2
         },
         "success": {
-          "remove": true,
+          "remove": 1,
           "food": 3,
           "skin": 1
         }
@@ -796,11 +800,13 @@
     "background": "bonfire",
     "actions": [
       {
-        "work": 1
+        "success": {
+          "work": 1
+        }
       },
       {
         "requirements": {
-          "people": "2-"
+          "people": 2
         },
         "success": {
           "people_card": 1
@@ -808,7 +814,7 @@
       },
       {
         "requirements": {
-          "people": "3+",
+          "people": 3,
           "wood": 1
         },
         "success": {
@@ -824,7 +830,9 @@
     "background": "bonfire",
     "actions": [
       {
-        "work": 1
+        "success": {
+          "work": 1
+        }
       },
       {
         "requirements": {
@@ -843,11 +851,13 @@
     "background": "bonfire",
     "actions": [
       {
-        "work": 1
+        "success": {
+          "work": 1
+        }
       },
       {
         "requirements": {
-          "people": "2-"
+          "people": 2
         },
         "success": {
           "people_card": 1
@@ -855,7 +865,7 @@
       },
       {
         "requirements": {
-          "people": "3+",
+          "people": 3,
           "wood": 1
         },
         "success": {
@@ -871,11 +881,13 @@
     "background": "bonfire",
     "actions": [
       {
-        "work": 1
+        "success": {
+          "work": 1
+        }
       },
       {
         "requirements": {
-          "people": "2-"
+          "people": 2
         },
         "success": {
           "people_card": 1
@@ -883,7 +895,7 @@
       },
       {
         "requirements": {
-          "people": "3+",
+          "people": 3,
           "wood": 1
         },
         "success": {
@@ -903,7 +915,7 @@
           "torch": 1
         },
         "success": {
-          "remove": true,
+          "remove": 1,
           "investigation_card": 1
         },
         "fail": {
@@ -991,7 +1003,9 @@
     "background": "bonfire",
     "actions": [
       {
-        "work": 1
+        "success": {
+          "work": 1
+        }
       },
       {
         "requirements": {
@@ -1034,7 +1048,9 @@
     "background": "bonfire",
     "actions": [
       {
-        "work": 2
+        "success": {
+          "work": 2
+        }
       },
       {
         "requirements": {

@@ -1,45 +1,27 @@
 package controller;
 
+import model.Action;
+import model.EventDao;
 import model.ScenarioDao;
 
-import java.util.Collection;
+import java.util.*;
 
 public class Game {
     private ScenarioDao scenario;
-    private int deaths;
-    private int mammoths;
-    private int food;
-    private int stone;
-    private int wood;
+    private final Map<String, Integer> resources;
     private Player currentPlayer;
-
-    public int getDeaths() {
-        return deaths;
-    }
-
-    public int getMammoths() {
-        return mammoths;
-    }
-
-    public int getFood() {
-        return food;
-    }
-
-    public int getStone() {
-        return stone;
-    }
-
-    public int getWood() {
-        return wood;
-    }
 
     public Game(ScenarioDao scenario, Collection<Player> players) {
         this.scenario = scenario;
-        this.deaths = 0;
-        this.mammoths = 0;
-        this.food = 5;
-        this.wood = 0;
-        this.stone = 0;
+        this.resources = new HashMap() {
+            {
+                put("death", 0);
+                put("mammoth", 0);
+                put("food", 5);
+                put("wood", 0);
+                put("stone", 0);
+            }
+        };
 
         if(players.size() > 0) {
             this.currentPlayer = (Player) players.toArray()[0];
@@ -48,5 +30,38 @@ public class Game {
 
     public Player getCurrentPlayer() {
         return currentPlayer;
+    }
+
+    public int getResources(String name) {
+        Map<String, Integer> buffer = new HashMap<>();
+        buffer.putAll(currentPlayer.getResources());
+        buffer.putAll(resources);
+
+        return buffer.getOrDefault(name, 0);
+    }
+
+    public Collection<Map<String, Integer>> checkRequirements(EventDao event) {
+        Collection<Map<String, Integer>> results = new ArrayList<>();
+
+        for(Action action: event.getActions()) {
+            boolean accepted = true;
+            for(String requirement: action.getRequirements().keySet()) {
+                int hasResources = this.getResources(requirement);
+                int neededResources = action.getRequirements().get(requirement);
+
+                if(hasResources < neededResources) {
+                    accepted = false;
+                    break;
+                }
+            }
+
+            if(accepted) {
+                results.add(action.getSuccess());
+            } else {
+                results.add(action.getFail());
+            }
+        }
+
+        return results;
     }
 }

@@ -13,10 +13,25 @@ import java.util.List;
 public class FileModel {
     private final Collection<ScenarioDao> scenarios;
     private final Collection<HumanDao> humans;
+    private final Collection<EventDao> events;
 
     public FileModel() {
         scenarios = initScenarios();
         humans = initHumans();
+        events = initEvents();
+    }
+
+    private Collection<EventDao> initEvents() {
+        final Collection<EventDao> result;
+        try {
+            ObjectMapper objectMapper = new ObjectMapper();
+            InputStream input = getClass().getClassLoader().getResourceAsStream("events.json");
+
+            result = objectMapper.readValue(input, new TypeReference<List<EventDao>>() {});
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+        return result;
     }
 
     private Collection<HumanDao> initHumans() {
