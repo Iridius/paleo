@@ -4,10 +4,7 @@ import model.*;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -18,10 +15,9 @@ class GameTest {
     public static void init() {
         FileModel model = new FileModel();
         ScenarioDao scenario = model.getScenario("Сценарий I");
-        Collection<HumanDao> humans = model.getHumans();
         HumanDao humanDao = new HumanDao("Умелец", 3, new HashMap<String, Integer>() {{put("hammer", 1);}}, 3);
 
-        Collection<Player> players = Arrays.asList(new Player(Arrays.asList(humanDao)));
+        Collection<Player> players = Collections.singletonList(new Player(Collections.singletonList(humanDao)));
         game = new Game(scenario, players);
     }
 
@@ -46,14 +42,14 @@ class GameTest {
 
     @Test
     public void check_requirements() {
-        Map<String, Integer> requirements = new HashMap() {{
-            put("hammer", 1);
-        }};
-        Map<String, Integer> success = new HashMap() {{
-           put("result", 1);
-        }};
+        Map<String, Integer> requirements = new HashMap<>();
+        requirements.put("hammer", 1);
+
+        Map<String, Integer> success = new HashMap<>();
+        success.put("result", 1);
+
         Action action = new Action(requirements, success, null);
-        EventDao event = new EventDao("а", "Тест", "", Arrays.asList(action), true);
+        EventDao event = new EventDao("а", "Тест", "", Collections.singletonList(action), true);
 
         Map<String, Integer> actual = (Map<String, Integer>) game.checkRequirements(event).toArray()[0];
 
