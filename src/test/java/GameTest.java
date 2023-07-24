@@ -7,6 +7,8 @@ import org.junit.jupiter.api.Test;
 import java.util.*;
 
 import static org.junit.jupiter.api.Assertions.*;
+import static org.mockito.ArgumentMatchers.any;
+import static org.mockito.Mockito.*;
 
 class GameTest {
     private static Game game;
@@ -42,18 +44,14 @@ class GameTest {
 
     @Test
     public void check_requirements() {
-        Map<String, Integer> requirements = new HashMap<>();
-        requirements.put("hammer", 1);
+        EventDao event = TestFramework.getEvent("Змея");
+        Game spy = spy(game);
+        when(spy.getResources(any())).thenReturn(5);
 
-        Map<String, Integer> success = new HashMap<>();
-        success.put("result", 1);
+        Collection<Map<String, Integer>> requirements = spy.checkRequirements(event);
+        Map<String, Integer> actual = (Map<String, Integer>) requirements.toArray()[0];
 
-        Action action = new Action(requirements, success, null);
-        EventDao event = new EventDao("а", "Тест", "", Collections.singletonList(action), true);
-
-        Map<String, Integer> actual = (Map<String, Integer>) game.checkRequirements(event).toArray()[0];
-
-        assertTrue(actual.containsKey("result"));
-        assertEquals(1, actual.get("result"));
+        assertEquals(1, actual.get("remove"));
+        assertEquals(1, actual.get("dream_card"));
     }
 }

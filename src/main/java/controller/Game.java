@@ -13,15 +13,8 @@ public class Game {
 
     public Game(ScenarioDao scenario, Collection<Player> players) {
         this.scenario = scenario;
-        this.resources = new HashMap() {
-            {
-                put("death", 0);
-                put("mammoth", 0);
-                put("food", 5);
-                put("wood", 0);
-                put("stone", 0);
-            }
-        };
+        this.resources = new HashMap<>();
+        this.resources.put("food", 5);
 
         if(players.size() > 0) {
             this.currentPlayer = (Player) players.toArray()[0];

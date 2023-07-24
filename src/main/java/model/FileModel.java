@@ -83,4 +83,8 @@ public class FileModel {
     public Collection<HumanDao> getHumans() {
         return humans;
     }
+
+    public Collection<EventDao> getEvents() {
+        return events;
+    }
 }

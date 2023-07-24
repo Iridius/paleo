@@ -26,4 +26,8 @@ public class EventDao {
     public List<Action> getActions() {
         return actions;
     }
+
+    public String getName() {
+        return name;
+    }
 }
