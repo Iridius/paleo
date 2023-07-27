@@ -28,6 +28,7 @@ public class Game {
     public int getResources(String name) {
         Map<String, Integer> buffer = new HashMap<>();
         buffer.putAll(currentPlayer.getResources());
+        buffer.put("drop", currentPlayer.getEvents().size());
         buffer.putAll(resources);
 
         return buffer.getOrDefault(name, 0);

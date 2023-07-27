@@ -1,5 +1,6 @@
 package controller;
 
+import model.EventDao;
 import model.FileModel;
 import model.HumanDao;
 import org.junit.jupiter.api.Test;
@@ -18,7 +19,9 @@ class PlayerTest {
         HumanDao human1 = new HumanDao("Умелец", 3, new HashMap<String, Integer>() {{put("hammer", 1);}}, 3);
         HumanDao human2 = new HumanDao("Умелец", 3, new HashMap<String, Integer>() {{put("hammer", 1);}}, 3);
 
-        Player player = new Player(Arrays.asList(human1, human2));
+        Collection<EventDao> events = model.getEvents();
+
+        Player player = new Player(Arrays.asList(human1, human2), events);
 
         assertEquals(2, player.getResources().get("hammer"));
     }

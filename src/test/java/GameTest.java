@@ -19,7 +19,7 @@ class GameTest {
         ScenarioDao scenario = model.getScenario("Сценарий I");
         HumanDao humanDao = new HumanDao("Умелец", 3, new HashMap<String, Integer>() {{put("hammer", 1);}}, 3);
 
-        Collection<Player> players = Collections.singletonList(new Player(Collections.singletonList(humanDao)));
+        Collection<Player> players = Collections.singletonList(new Player(Collections.singletonList(humanDao), model.getEvents()));
         game = new Game(scenario, players);
     }
 
@@ -43,15 +43,44 @@ class GameTest {
     }
 
     @Test
-    public void check_requirements() {
+    public void check_requirements_true() {
         EventDao event = TestFramework.getEvent("Змея");
         Game spy = spy(game);
         when(spy.getResources(any())).thenReturn(5);
 
-        Collection<Map<String, Integer>> requirements = spy.checkRequirements(event);
-        Map<String, Integer> actual = (Map<String, Integer>) requirements.toArray()[0];
+        Collection<Map<String, Integer>> result = spy.checkRequirements(event);
+        Map<String, Integer> actual = (Map<String, Integer>) result.toArray()[0];
 
         assertEquals(1, actual.get("remove"));
         assertEquals(1, actual.get("dream_card"));
+    }
+
+    @Test
+    public void check_requirements_false() {
+        EventDao event = TestFramework.getEvent("Змея");
+        Game spy = spy(game);
+        when(spy.getResources(any())).thenReturn(1);
+
+        Collection<Map<String, Integer>> result = spy.checkRequirements(event);
+        Map<String, Integer> actual = (Map<String, Integer>) result.toArray()[0];
+
+        assertEquals(2, actual.get("damage"));
+    }
+
+    @Test
+    public void check_requirements_2_true() {
+        EventDao event = TestFramework.getEvent("Камнепад");
+        Game spy = spy(game);
+        when(spy.getResources("attention")).thenReturn(2);
+
+        Collection<Map<String, Integer>> result = spy.checkRequirements(event);
+        Map<String, Integer> actual = (Map<String, Integer>) result.toArray()[0];
+
+        assertEquals(2, actual.get("stone"));
+    }
+
+    @Test
+    public void check_drop() {
+        assertTrue(game.getResources("drop") > 10);
     }
 }
