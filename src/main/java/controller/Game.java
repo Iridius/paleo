@@ -3,6 +3,7 @@ package controller;
 import model.Action;
 import model.EventDao;
 import model.ScenarioDao;
+import model.Success;
 
 import java.util.*;
 
@@ -26,22 +27,24 @@ public class Game {
     }
 
     public int getResources(String name) {
-        Map<String, Integer> buffer = new HashMap<>();
-        buffer.putAll(currentPlayer.getResources());
+        Map<String, Integer> buffer = new HashMap<>(currentPlayer.getResources());
         buffer.put("drop", currentPlayer.getEvents().size());
         buffer.putAll(resources);
 
         return buffer.getOrDefault(name, 0);
     }
 
-    public Collection<Map<String, Integer>> checkRequirements(EventDao event) {
-        Collection<Map<String, Integer>> results = new ArrayList<>();
+    public List<IResult> getPossibleResults(EventDao event) {
+        List<IResult> results = new ArrayList<>();
 
+        int i = 0;
         for(Action action: event.getActions()) {
             boolean accepted = true;
-            for(String requirement: action.getRequirements().keySet()) {
+            Map<String, Integer> requirements = action.getSuccess().getRequirements();
+
+            for(String requirement: requirements.keySet()) {
                 int hasResources = this.getResources(requirement);
-                int neededResources = action.getRequirements().get(requirement);
+                int neededResources = requirements.get(requirement);
 
                 if(hasResources < neededResources) {
                     accepted = false;
@@ -54,6 +57,7 @@ public class Game {
             } else {
                 results.add(action.getFail());
             }
+            i++;
         }
 
         return results;

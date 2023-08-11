@@ -1,5 +1,4 @@
-import controller.Game;
-import controller.Player;
+import controller.*;
 import model.*;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
@@ -48,11 +47,11 @@ class GameTest {
         Game spy = spy(game);
         when(spy.getResources(any())).thenReturn(5);
 
-        Collection<Map<String, Integer>> result = spy.checkRequirements(event);
-        Map<String, Integer> actual = (Map<String, Integer>) result.toArray()[0];
+        Collection<IResult> results = spy.getPossibleResults(event);
+        ISuccess actual = (ISuccess) results.toArray()[0];
 
-        assertEquals(1, actual.get("remove"));
-        assertEquals(1, actual.get("dream_card"));
+        assertEquals(1, actual.getSuccess().get("remove"));
+        assertEquals(1, actual.getSuccess().get("dream_card"));
     }
 
     @Test
@@ -61,10 +60,10 @@ class GameTest {
         Game spy = spy(game);
         when(spy.getResources(any())).thenReturn(1);
 
-        Collection<Map<String, Integer>> result = spy.checkRequirements(event);
-        Map<String, Integer> actual = (Map<String, Integer>) result.toArray()[0];
+        List<IResult> results = spy.getPossibleResults(event);
+        IFail actual = (IFail) results.toArray()[0];
 
-        assertEquals(2, actual.get("damage"));
+        assertEquals(2, actual.getFail().get("damage"));
     }
 
     @Test
@@ -73,14 +72,40 @@ class GameTest {
         Game spy = spy(game);
         when(spy.getResources("attention")).thenReturn(2);
 
-        Collection<Map<String, Integer>> result = spy.checkRequirements(event);
-        Map<String, Integer> actual = (Map<String, Integer>) result.toArray()[0];
+        List<IResult> results = spy.getPossibleResults(event);
+        ISuccess actual = (ISuccess)results.toArray()[0];
 
-        assertEquals(2, actual.get("stone"));
+        assertEquals(2, actual.getSuccess().get("stone"));
     }
 
     @Test
     public void check_drop() {
         assertTrue(game.getResources("drop") > 10);
+    }
+
+    @Test
+    public void check_drop_after_success() {
+        EventDao event = TestFramework.getEvent("Беспомощный кабан");
+        Game spy = spy(game);
+        when(spy.getResources(any())).thenReturn(10);
+        int before = game.getResources("drop");
+
+        List<IResult> results = spy.getPossibleResults(event);
+        for(IResult result: results) {
+            assertTrue(result instanceof ISuccess);
+        }
+        int after = game.getResources("drop");
+
+        assertEquals(3, before - after);
+    }
+
+    @Test
+    public void apply_one_possible_success() {
+
+    }
+
+    @Test
+    public void apply_one_fail() {
+
     }
 }
